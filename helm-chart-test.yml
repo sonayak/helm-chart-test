@@ -22,10 +22,9 @@ steps:
     helmVersionToInstall: 'latest'
 - task: HelmDeploy@0
   inputs:
-    connectionType: 'Azure Resource Manager'
     azureSubscriptionForACR: 'RMDev(c00d16c7-6c1f-4c03-9be1-6934a4c49682)'
     azureResourceGroupForACR: 'sonayak-rg'
     azureContainerRegistry: 'sonayak.azurecr.io'
-    chartPath: './helloworld-chart'
-    chartName: 'helloworld-chart'
     command: 'save'
+    chartName: 'myworld'
+    chartPath: './helloworld-chart'
