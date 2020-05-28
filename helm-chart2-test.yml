@@ -16,6 +16,9 @@ steps:
 - task: HelmInstaller@1
   inputs:
     helmVersionToInstall: '2'
+- task: KubectlInstaller@0
+  inputs:
+    kubectlVersion: 'latest'
 
 - task: HelmDeploy@0
   inputs:
