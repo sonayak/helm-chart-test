@@ -26,5 +26,5 @@ steps:
     azureResourceGroupForACR: 'sonayak-rg'
     azureContainerRegistry: 'sonayak.azurecr.io'
     command: 'save'
-    chartName: 'myworld'
-    chartPath: './helloworld-chart'
+    chartNameForACR: 'myworld'
+    chartPathForACR: './helloworld-chart'
